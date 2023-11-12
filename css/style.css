@@ -5,7 +5,7 @@
 
 :root {
     --default-text-color: white;
-    --default-font-zize: 1.5vw;
+    --default-font-size: 1.5vw;
 }
 
 @font-face {
@@ -18,14 +18,17 @@
     src: url(../fonts/PTSansCaption-Regular.ttf);
 }
 
-body {
+.container {
     background-image: url(../media/bg1.jpg) ;
     background-size: cover;
+    background-position: center;
     overflow-x: hidden;
+    height: max-content;
+    height: 100vh;
 }
 
 .header{
-    padding: 30px;
+    padding: 30px 30px 15px 30px;
 }
 
 .header .logo{
@@ -41,14 +44,14 @@ body {
     padding: 15px 30px 15px 30px;
     color: var(--default-text-color);
     font-family: "russo-one";
-    font-size: var(--default-font-zize);
+    font-size: var(--default-font-size);
 }
 
 .product_description {
     padding: 15px 30px 15px 30px;
     color: var(--default-text-color);
     font-family: "description-font";
-    font-size: var(--default-font-zize);
+    font-size: var(--default-font-size);
 }
 
 .download_button_line {
@@ -64,18 +67,134 @@ body {
     width: 17vw;
 }
 
-footer {
-    background-color: rgb(33, 33, 33);
-    width: 100vw;
-    height: max-content;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 15px 30px 15px 30px;
+@media screen and (max-width: 1280px){
+    :root {
+        --default-font-size: 1.75vw;
+    }
+
+    .header .logo{
+        width: 35vw;
+        transition: 0.75s;
+    }
+    
+    .header .logo:hover{
+        width: 36vw;
+    }
+
+    .download_button {
+        width: 18vw;
+        transition: 0.75s;
+    }
+    
+    .download_button:hover{
+        width: 20vw;
+    }
 }
 
-footer h1 {
-    font-size: var(--default-font-zize);
-    font-family: "russo-one";
-    color: var(--default-text-color);
+@media screen and (max-width: 1024px) {
+    :root {
+        --default-font-size: 2vw;
+    }
+
+    .header .logo{
+        width: 40vw;
+        transition: 0.75s;
+    }
+    
+    .header .logo:hover{
+        width: 41vw;
+    }
+
+    .download_button {
+        width: 20vw;
+        transition: 0.75s;
+    }
+    
+    .download_button:hover{
+        width: 22vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --default-font-size: 2.5vw;
+    }
+
+    .header .logo{
+        width: 50vw;
+        transition: 0.75s;
+    }
+    
+    .header .logo:hover{
+        width: 52vw;
+    }
+
+    .download_button {
+        width: 25vw;
+        transition: 0.75s;
+    }
+    
+    .download_button:hover{
+        width: 27vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --default-font-size: 3vw;
+    }
+
+    .header .logo{
+        width: 55vw;
+        transition: 0.75s;
+    }
+    
+    .header .logo:hover{
+        width: 57vw;
+    }
+
+    .download_button {
+        width: 30vw;
+        transition: 0.75s;
+    }
+    
+    .download_button:hover{
+        width: 32vw;
+    }
+
+    .product_title {
+        padding: 7px 30px 7px 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    :root {
+        --default-font-size: 3.5vw;
+    }
+
+    .header .logo{
+        width: 65vw;
+        transition: 0.75s;
+    }
+    
+    .header .logo:hover{
+        width: 67vw;
+    }
+
+    .download_button {
+        width: 38vw;
+        transition: 0.75s;
+    }
+    
+    .download_button:hover{
+        width: 40vw;
+    }
+
+    .product_title {
+        padding: 5px 30px 5px 30px;
+    }
+
+    .header {
+        padding: 30px 30px 10px 30px;
+    }
 }
