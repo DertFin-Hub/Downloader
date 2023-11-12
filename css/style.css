@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --default-text-color: white;
+    --default-font-zize: 1.5vw;
+}
+
+@font-face {
+    font-family: "russo-one";
+    src: url(../fonts/RussoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "description-font";
+    src: url(../fonts/PTSansCaption-Regular.ttf);
+}
+
+body {
+    background-image: url(../media/bg1.jpg);
+    background-size: cover;
+}
+
+.header{
+    padding: 30px;
+}
+
+.header .logo{
+    width: 30vw;
+    transition: 0.75s;
+}
+
+.header .logo:hover{
+    width: 31vw;
+}
+
+.product_title {
+    padding: 15px 30px 15px 30px;
+    color: var(--default-text-color);
+    font-family: "russo-one";
+    font-size: var(--default-font-zize);
+}
+
+.product_description {
+    padding: 15px 30px 15px 30px;
+    color: var(--default-text-color);
+    font-family: "description-font";
+    font-size: var(--default-font-zize);
+}
+
+.download_button_line {
+    padding: 15px 30px 15px 30px;
+}
+
+.download_button {
+    width: 15vw;
+    transition: 0.75s;
+}
+
+.download_button:hover{
+    width: 17vw;
+}
