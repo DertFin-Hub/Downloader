@@ -21,7 +21,7 @@
 body {
     background-image: url(../media/bg1.jpg) ;
     background-size: cover;
-    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .header{
@@ -62,4 +62,20 @@ body {
 
 .download_button:hover{
     width: 17vw;
+}
+
+footer {
+    background-color: rgb(33, 33, 33);
+    width: 100vw;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 30px 15px 30px;
+}
+
+footer h1 {
+    font-size: var(--default-font-zize);
+    font-family: "russo-one";
+    color: var(--default-text-color);
 }
