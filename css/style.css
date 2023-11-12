@@ -19,8 +19,9 @@
 }
 
 body {
-    background-image: url(../media/bg1.jpg);
+    background-image: url(../media/bg1.jpg) ;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header{
